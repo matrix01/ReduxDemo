@@ -20,6 +20,18 @@
 		38F109052BC596040031C38A /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109042BC596040031C38A /* CounterReducer.swift */; };
 		38F109072BC596100031C38A /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109062BC596100031C38A /* CounterView.swift */; };
 		38F1090B2BC596BA0031C38A /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1090A2BC596BA0031C38A /* CounterState.swift */; };
+		38F109182BC845D50031C38A /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109132BC845D50031C38A /* EndPointType.swift */; };
+		38F109192BC845D50031C38A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109142BC845D50031C38A /* NetworkService.swift */; };
+		38F1091A2BC845D50031C38A /* DecodedErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109152BC845D50031C38A /* DecodedErrors.swift */; };
+		38F1091C2BC8489F0031C38A /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1091B2BC8489F0031C38A /* AppEnvironment.swift */; };
+		38F1091F2BC8540B0031C38A /* GitEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1091E2BC8540B0031C38A /* GitEndPoints.swift */; };
+		38F109212BC996360031C38A /* SimpleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109202BC996360031C38A /* SimpleUser.swift */; };
+		38F109242BC996A60031C38A /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109232BC996A60031C38A /* UserListView.swift */; };
+		38F109262BC996B30031C38A /* UserListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109252BC996B30031C38A /* UserListReducer.swift */; };
+		38F109282BC997ED0031C38A /* UserListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109272BC997ED0031C38A /* UserListState.swift */; };
+		38F1092A2BC998470031C38A /* UserListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109292BC998470031C38A /* UserListAction.swift */; };
+		38F1092C2BC99FE60031C38A /* UserListMiddleWare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1092B2BC99FE60031C38A /* UserListMiddleWare.swift */; };
+		38F109302BC9BCC80031C38A /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38F1092F2BC9BCC80031C38A /* secrets.plist */; };
 		38FF31182BACB83900023F72 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FF31172BACB83900023F72 /* Store.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +69,18 @@
 		38F109042BC596040031C38A /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		38F109062BC596100031C38A /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		38F1090A2BC596BA0031C38A /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
+		38F109132BC845D50031C38A /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		38F109142BC845D50031C38A /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		38F109152BC845D50031C38A /* DecodedErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodedErrors.swift; sourceTree = "<group>"; };
+		38F1091B2BC8489F0031C38A /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		38F1091E2BC8540B0031C38A /* GitEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitEndPoints.swift; sourceTree = "<group>"; };
+		38F109202BC996360031C38A /* SimpleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUser.swift; sourceTree = "<group>"; };
+		38F109232BC996A60031C38A /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		38F109252BC996B30031C38A /* UserListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListReducer.swift; sourceTree = "<group>"; };
+		38F109272BC997ED0031C38A /* UserListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListState.swift; sourceTree = "<group>"; };
+		38F109292BC998470031C38A /* UserListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListAction.swift; sourceTree = "<group>"; };
+		38F1092B2BC99FE60031C38A /* UserListMiddleWare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListMiddleWare.swift; sourceTree = "<group>"; };
+		38F1092F2BC9BCC80031C38A /* secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secrets.plist; sourceTree = "<group>"; };
 		38FF31172BACB83900023F72 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +132,7 @@
 		3816ABB02BAB640300F2D5D5 /* ReduxApp */ = {
 			isa = PBXGroup;
 			children = (
+				38F1090D2BC6F5AC0031C38A /* Network */,
 				38F1090C2BC5A11D0031C38A /* Screens */,
 				38FF31162BACB82400023F72 /* Architecture */,
 				3816ABB12BAB640300F2D5D5 /* ReduxAppApp.swift */,
@@ -157,9 +182,60 @@
 		38F1090C2BC5A11D0031C38A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				38F1091D2BC84F550031C38A /* UserList */,
 				38F109012BC595E30031C38A /* Counter */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		38F1090D2BC6F5AC0031C38A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				38F1091B2BC8489F0031C38A /* AppEnvironment.swift */,
+				38F109162BC845D50031C38A /* Base */,
+				38F1092D2BC9B5E30031C38A /* Endpoints */,
+				38F109222BC996800031C38A /* Entity */,
+				38F1092F2BC9BCC80031C38A /* secrets.plist */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		38F109162BC845D50031C38A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				38F109132BC845D50031C38A /* EndPointType.swift */,
+				38F109142BC845D50031C38A /* NetworkService.swift */,
+				38F109152BC845D50031C38A /* DecodedErrors.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		38F1091D2BC84F550031C38A /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				38F109292BC998470031C38A /* UserListAction.swift */,
+				38F1092B2BC99FE60031C38A /* UserListMiddleWare.swift */,
+				38F109252BC996B30031C38A /* UserListReducer.swift */,
+				38F109272BC997ED0031C38A /* UserListState.swift */,
+				38F109232BC996A60031C38A /* UserListView.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		38F109222BC996800031C38A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				38F109202BC996360031C38A /* SimpleUser.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		38F1092D2BC9B5E30031C38A /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				38F1091E2BC8540B0031C38A /* GitEndPoints.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 		38FF31162BACB82400023F72 /* Architecture */ = {
@@ -278,6 +354,7 @@
 			files = (
 				3816ABB92BAB640400F2D5D5 /* Preview Assets.xcassets in Resources */,
 				3816ABB62BAB640400F2D5D5 /* Assets.xcassets in Resources */,
+				38F109302BC9BCC80031C38A /* secrets.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,15 +379,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F109182BC845D50031C38A /* EndPointType.swift in Sources */,
 				38F109032BC595F80031C38A /* CounterAction.swift in Sources */,
 				38FF31182BACB83900023F72 /* Store.swift in Sources */,
+				38F109242BC996A60031C38A /* UserListView.swift in Sources */,
+				38F1092C2BC99FE60031C38A /* UserListMiddleWare.swift in Sources */,
+				38F1092A2BC998470031C38A /* UserListAction.swift in Sources */,
+				38F1091F2BC8540B0031C38A /* GitEndPoints.swift in Sources */,
 				3816ABB42BAB640300F2D5D5 /* ContentView.swift in Sources */,
+				38F1091C2BC8489F0031C38A /* AppEnvironment.swift in Sources */,
+				38F109192BC845D50031C38A /* NetworkService.swift in Sources */,
 				3816ABB22BAB640300F2D5D5 /* ReduxAppApp.swift in Sources */,
+				38F109262BC996B30031C38A /* UserListReducer.swift in Sources */,
 				38F108FE2BC58C5A0031C38A /* AppState.swift in Sources */,
 				38F1090B2BC596BA0031C38A /* CounterState.swift in Sources */,
+				38F109282BC997ED0031C38A /* UserListState.swift in Sources */,
 				38F109052BC596040031C38A /* CounterReducer.swift in Sources */,
+				38F109212BC996360031C38A /* SimpleUser.swift in Sources */,
 				38F109002BC58C890031C38A /* AppReducer.swift in Sources */,
 				38F109072BC596100031C38A /* CounterView.swift in Sources */,
+				38F1091A2BC845D50031C38A /* DecodedErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

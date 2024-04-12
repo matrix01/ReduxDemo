@@ -10,7 +10,13 @@ import SwiftUI
 @main
 struct ReduxAppApp: App {
     var body: some Scene {
-        let store = Store(reducer: appReducer, state: AppState(), middlewares: [])
+        let store = Store(
+            reducer: appReducer,
+            state: AppState(),
+            middlewares: [
+                userListMiddleware()
+            ]
+        )
         WindowGroup {
             ContentView()
                 .environmentObject(store)

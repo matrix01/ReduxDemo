@@ -9,4 +9,5 @@ import Foundation
 // MARK: - AppState
 struct AppState: ReduxState {
     var counterState = CounterState()
+    var userListState = UserListState()
 }

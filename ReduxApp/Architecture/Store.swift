@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Typealias
 typealias Dispatcher = (Action) -> Void
 typealias Reducer<State: ReduxState> = (_ state: State, _ action: Action) -> State
-typealias Middleware<StoreState: ReduxState> = (StoreState, Action, @escaping Dispatcher) -> Void
+typealias Middleware<StoreState: ReduxState> = (StoreState, Action, NetworkService, @escaping Dispatcher) -> Void
 
 // MARK: - Protocol
 protocol ReduxState {}
@@ -24,16 +24,19 @@ final class Store<StoreState: ReduxState>: ObservableObject {
     @Published private(set) var state: StoreState
     private var reducer: Reducer<StoreState>
     private var middlewares: [Middleware<StoreState>]
+    private var networkClient: NetworkService
 
     // MARK: - Initialzer
     init(
         reducer: @escaping Reducer<StoreState>,
         state: StoreState,
-        middlewares: [Middleware<StoreState>] = []
+        middlewares: [Middleware<StoreState>] = [],
+        networkClient: NetworkService = .init()
     ) {
         self.reducer = reducer
         self.state = state
         self.middlewares = middlewares
+        self.networkClient = networkClient
     }
 
     // MARK: - Function
@@ -43,7 +46,7 @@ final class Store<StoreState: ReduxState>: ObservableObject {
         }
         
         middlewares.forEach { middleware in
-            middleware(state, action, dispatch)
+            middleware(state, action, networkClient, dispatch)
         }
     }
 }

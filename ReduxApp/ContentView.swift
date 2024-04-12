@@ -16,11 +16,20 @@ struct ContentView: View {
             CounterView()
                 .tabItem {
                     Label(
-                        title: { /*@START_MENU_TOKEN@*/Text("Label")/*@END_MENU_TOKEN@*/ },
+                        title: { Text("Counter") },
                         icon: { Image(systemName: "42.circle") }
                     )
                 }
                 .tag(0)
+            
+            UserListView()
+                .tabItem {
+                    Label(
+                        title: { Text("List") },
+                        icon: { Image(systemName: "list.bullet") }
+                    )
+                }
+                .tag(1)
         }
         .environmentObject(store)
     }

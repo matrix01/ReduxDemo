@@ -50,4 +50,5 @@ struct CounterView: View {
 
 #Preview {
     CounterView()
+        .environmentObject(Store(reducer: appReducer, state: AppState()))
 }

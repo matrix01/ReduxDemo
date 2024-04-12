@@ -7,10 +7,16 @@
 
 import Foundation
 
-func appReducer(_ state: AppState, _ action: Action) -> AppState {
+func appReducer(_ state: AppState, _ action: Any) -> AppState {
     var state = state
     
-    state.counterState = counterReducer(state.counterState, action)
+    if let counterAction = action as? CounterAction {
+        state.counterState = counterReducer(state.counterState, counterAction)
+    }
+    
+    if let userListAction = action as? UserListAction {
+        state.userListState = userListReducer(state.userListState, userListAction)
+    }
     
     return state
 }

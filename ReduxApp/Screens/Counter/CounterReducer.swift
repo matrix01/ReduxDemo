@@ -7,12 +7,8 @@
 
 import Foundation
 
-func counterReducer(_ state: CounterState, _ action: Action) -> CounterState {
+func counterReducer(_ state: CounterState, _ action: CounterAction) -> CounterState {
     var state = state
-    guard let action = action as? CounterAction else {
-        assertionFailure("Invalid action passed")
-        return state
-    }
     switch action {
     case .increment:
         state.counter += 1

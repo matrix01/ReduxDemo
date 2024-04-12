@@ -1,2 +1,2 @@
-# ReduxDemo
+# Redux & SwiftUI Demo with concurrency (await/async)
 Try out the redux architecture...
