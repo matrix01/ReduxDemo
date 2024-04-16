@@ -44,10 +44,10 @@ struct UserListView: View {
                         props.setSelected(user)
                     }
             }
-            .navigationDestination(for: SimpleUser.self, destination: { _ in
+            .navigationDestination(for: SimpleUser.self) { _ in
                 UserDetailView()
                     .environmentObject(store)
-            })
+            }
             .task {
                 props.fetch()
             }
