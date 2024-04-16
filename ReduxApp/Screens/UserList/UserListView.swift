@@ -13,24 +13,44 @@ struct UserListView: View {
     private struct Props {
         let users: [SimpleUser]
         let error: DecodedErrors?
-        let fetch: UserListAction
+        let fetch: () -> Void
+        let setSelected: (SimpleUser) -> Void
+        let isActive: () -> Binding<[SimpleUser]>
     }
-    
+
     private func mapStateToProps(state: UserListState) -> Props {
         return Props(
-            users: store.state.userListState.users, 
-            error: store.state.userListState.error,
-            fetch: .fetchUsers
+            users: state.users,
+            error: state.error,
+            fetch: { store.dispatch(action: UserListAction.fetchUsers) },
+            setSelected: { user in
+                store.dispatch(action: UserListAction.selectUser(userId: user.id))
+            },
+            isActive: {
+                Binding<[SimpleUser]>(
+                    get: { [state.selectedUser].compactMap{$0} },
+                    set: { _ in }
+                )
+            }
         )
     }
     
     var body: some View {
         let props = mapStateToProps(state: store.state.userListState)
-        List(props.users) { user in
-            UserRow(user: user)
-        }
-        .task {
-            store.dispatch(action: props.fetch)
+        NavigationStack(path: props.isActive()) {
+            List(props.users) { user in
+                UserRow(user: user)
+                    .onTapGesture {
+                        props.setSelected(user)
+                    }
+            }
+            .navigationDestination(for: SimpleUser.self, destination: { _ in
+                UserDetailView()
+                    .environmentObject(store)
+            })
+            .task {
+                props.fetch()
+            }
         }
     }
 }

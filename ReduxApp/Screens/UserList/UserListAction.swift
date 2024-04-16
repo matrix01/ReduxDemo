@@ -11,4 +11,5 @@ enum UserListAction: Action {
     case fetchUsers
     case fetchUsersSuccess([SimpleUser])
     case fetchUsersFailure(DecodedErrors)
+    case selectUser(userId: Int)
 }

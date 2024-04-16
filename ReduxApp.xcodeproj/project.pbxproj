@@ -32,6 +32,7 @@
 		38F1092A2BC998470031C38A /* UserListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109292BC998470031C38A /* UserListAction.swift */; };
 		38F1092C2BC99FE60031C38A /* UserListMiddleWare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1092B2BC99FE60031C38A /* UserListMiddleWare.swift */; };
 		38F109302BC9BCC80031C38A /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38F1092F2BC9BCC80031C38A /* secrets.plist */; };
+		38F109322BCAD6180031C38A /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F109312BCAD6180031C38A /* UserDetailView.swift */; };
 		38FF31182BACB83900023F72 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FF31172BACB83900023F72 /* Store.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		38F109292BC998470031C38A /* UserListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListAction.swift; sourceTree = "<group>"; };
 		38F1092B2BC99FE60031C38A /* UserListMiddleWare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListMiddleWare.swift; sourceTree = "<group>"; };
 		38F1092F2BC9BCC80031C38A /* secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secrets.plist; sourceTree = "<group>"; };
+		38F109312BCAD6180031C38A /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		38FF31172BACB83900023F72 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 		38F1090C2BC5A11D0031C38A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				38F109332BCAD6210031C38A /* UserDetails */,
 				38F1091D2BC84F550031C38A /* UserList */,
 				38F109012BC595E30031C38A /* Counter */,
 			);
@@ -236,6 +239,14 @@
 				38F1091E2BC8540B0031C38A /* GitEndPoints.swift */,
 			);
 			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		38F109332BCAD6210031C38A /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				38F109312BCAD6180031C38A /* UserDetailView.swift */,
+			);
+			path = UserDetails;
 			sourceTree = "<group>";
 		};
 		38FF31162BACB82400023F72 /* Architecture */ = {
@@ -383,6 +394,7 @@
 				38F109032BC595F80031C38A /* CounterAction.swift in Sources */,
 				38FF31182BACB83900023F72 /* Store.swift in Sources */,
 				38F109242BC996A60031C38A /* UserListView.swift in Sources */,
+				38F109322BCAD6180031C38A /* UserDetailView.swift in Sources */,
 				38F1092C2BC99FE60031C38A /* UserListMiddleWare.swift in Sources */,
 				38F1092A2BC998470031C38A /* UserListAction.swift in Sources */,
 				38F1091F2BC8540B0031C38A /* GitEndPoints.swift in Sources */,

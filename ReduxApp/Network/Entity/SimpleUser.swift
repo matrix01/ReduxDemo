@@ -37,6 +37,12 @@ extension SimpleUser: Identifiable {
      */
 }
 
+extension SimpleUser: Hashable {
+    /*
+     Empty
+     */
+}
+
 extension SimpleUser: Equatable {
     static func == (lhs: SimpleUser, rhs: SimpleUser) -> Bool {
         return lhs.email == rhs.email &&

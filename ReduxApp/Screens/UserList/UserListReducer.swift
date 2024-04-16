@@ -25,5 +25,9 @@ func userListReducer(_ state: UserListState, _ action: UserListAction) -> UserLi
         state.isLoading = false
         state.error = error
         return state
+        
+    case .selectUser(let userId):
+        state.userId = userId
+        return state
     }
 }
