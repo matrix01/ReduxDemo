@@ -15,7 +15,7 @@ struct UserListView: View {
         let error: DecodedErrors?
         let fetch: () -> Void
         let setSelected: (SimpleUser) -> Void
-        let isActive: () -> Binding<[SimpleUser]>
+        let navigationPath: () -> Binding<[SimpleUser]>
     }
 
     private func mapStateToProps(state: UserListState) -> Props {
@@ -26,7 +26,7 @@ struct UserListView: View {
             setSelected: { user in
                 store.dispatch(action: UserListAction.selectUser(userId: user.id))
             },
-            isActive: {
+            navigationPath: {
                 Binding<[SimpleUser]>(
                     get: { [state.selectedUser].compactMap{$0} },
                     set: { _ in }
@@ -37,7 +37,7 @@ struct UserListView: View {
     
     var body: some View {
         let props = mapStateToProps(state: store.state.userListState)
-        NavigationStack(path: props.isActive()) {
+        NavigationStack(path: props.navigationPath()) {
             List(props.users) { user in
                 UserRow(user: user)
                     .onTapGesture {
